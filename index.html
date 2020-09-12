@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    <title>CORONA-Map</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            width: 100vw;
+            height: 100vh;
+
+
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div id='map'>
+
+    </div>
+
+</body>
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+<script>
+    // var color = "rgb()"
+    mapboxgl.accessToken = 'pk.eyJ1IjoiY29yb25hbWFwMDA3IiwiYSI6ImNrZXMxcnllNzAxczEycnA3aWlzcHJvdmEifQ.jmL8lL4JBy0eBZQj19Lk8g';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/dark-v10',
+        center: [78.2, 20.8],
+        zoom: 1.5
+    });
+
+</script>
+<script src="index.js"></script>
+
+</html>
